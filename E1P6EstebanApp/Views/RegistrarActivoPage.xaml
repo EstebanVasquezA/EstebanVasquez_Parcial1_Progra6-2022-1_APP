@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E1P6EstebanApp.Views.RegistrarActivoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro Activos" FontSize="Header" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Entry x:Name="TxtNombreActivo" Placeholder="Nombre Activo" FontSize="Medium" TextColor="Black" BackgroundColor="White" />
+            <Entry x:Name="TxtNumeroSerie" Placeholder="Número de Serie" FontSize="Medium" TextColor="Black" BackgroundColor="White" />
+            <Entry x:Name="TxtCostoActivo" Placeholder="Costo del Activo" FontSize="Medium" TextColor="Black" BackgroundColor="White" />
+            <Entry x:Name="TxtDescripcion" Placeholder="Descripción" FontSize="Medium" TextColor="Black" BackgroundColor="White" />
+            <Entry x:Name="TxtUbicacion" Placeholder="Ubicación" FontSize="Medium" TextColor="Black" BackgroundColor="White" />
+            <Entry x:Name="TxtResponsable" Placeholder="Responsable" FontSize="Medium" TextColor="Black" BackgroundColor="White" />
+            <Label Text="Fecha de Registro" FontSize="Large" TextColor="Black"/>
+            <DatePicker x:Name="DteFecha" />
+            <Entry x:Name="TxtEstadoActivo" Placeholder="Estado del Activo" FontSize="Medium" TextColor="Black" BackgroundColor="White" />
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Text="Guardar Activo" x:Name="BtnGuardarActivo" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" BackgroundColor="Green" FontSize="Medium" />
+                <Button Text="Cancelar" x:Name="BtnCancelar" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="1" BackgroundColor="Red" FontSize="Medium" Clicked="CmdCancelar" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
